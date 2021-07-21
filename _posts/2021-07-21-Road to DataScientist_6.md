@@ -86,5 +86,13 @@ for x in range(number):
 ```
 
 ## 해답 4.
+```python
+news_list = news1.split() + news2.split() + news3.split() + news4.split() + news5.split()
+word_Dict = {}
 
+for word in news_list:
+  word_Dict[word] = word_Dict.get(word, 0) + 1
+
+print(word_Dict)
+```
 

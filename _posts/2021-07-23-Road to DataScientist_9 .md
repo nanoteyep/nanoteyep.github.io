@@ -125,6 +125,118 @@ np.zeros((3, 3))    #list혹은 튜플로 집어넣어야 합니다. np.zeros(3,
 np.arange(10)
 ```
 
-## 4. Array 계산 - Universial function
+## 4. Array 계산 - Vector operation
 
-* numpy.array를 쓰는 가장 큰 이유는 vector 계산이 가능하기 때문입니다
+* numpy.array를 쓰는 가장 큰 이유는 vector 계산이 가능하기 때문입니다.
+
+* 특히 데이터 분석 분야에서는 거의 대부분의 데이터를 벡터로 표현하여 분석하기 때문에 매우 중요합니다.
+
+![Vector operation](/img/vector_operations.png)
+
+* 두 벡터 A = (1, 2), B = (2, 1) 이라고 할 때 두 벡터의 연산은 다음과 같이 정의됩니다.
+
+```
+A + B = (1 + 2, 2 + 1) = (3, 3)
+A - B = (1 - 2, 2 - 1) = (-1, 1)
+A · B = 1 X 2 + 2 X 1 = 4  # dot product
+```
+* 실제로 numpy.array를 생성하여 벡터 계산을 해보고 파이썬 리스트 연산과 무엇이 다른지 확인해 봅시다.
+
+```python
+L1 = [1, 2, 3]
+L2 = [4, 5, 6]
+
+print(L1 + L2)  # [1, 2, 3, 4, 5, 6]
+
+arr1 = np.array(L1)
+arr2 = np.array(L2)
+print(arr1 + arr2)  # [5, 7, 9]
+```
+* 다음 연산은 vector연산과는 조금 다른 elementwise 연산입니다. 주의 해야 할 점은 vector 곱셈과 나눗셈과는 다른 연산이라는 것 입니다.
+
+```python
+#elementwise multiplication
+print(arr1 * arr2)
+
+#elementwise division
+print(arr1 / arr2)
+
+#-----------------------------
+#dot product
+print(arr1 @ arr2)  # 이 연산은 vector의 dot product(점곱)을 계산하는 방법이며 vector 연산이 맞습니다.
+```
+
+## 5. Array계산 - Broadcast
+
+* Broadcast는 서로 size가 다른 두 vector를 연산시 자동으로 분배(broadcast)해주는 기능입니다.
+
+* 선형대수(Linear algebra)에서의 행렬계산과 동일한 연산을 하기 위한 기능입니다.
+
+```python
+arr1 = np.array([1, 2, 3],
+                [4, 5, 6])  # 2 X 3 array 생성
+          
+arr2 = np.array([7, 8, 9])  # 3 X 1 array 생성
+
+print(arr1 + arr2)  # [1, 2, 3] + [7, 8, 9] // [4, 5, 6] + [7, 8, 9]
+                    # 큰 array에 작은 array를 뿌리는 느낌입니다.
+                    
+print(arr1 * arr2)  # [1, 2, 3] · [7, 8, 9] // [4, 5, 6] · [7, 8, 9]
+
+# 행렬의 곱셈과 무척 유사합니다
+
+# [1, 2, 3]   X   [7]
+# [4, 5, 6]       [8]
+#                 [9]
+```
+
+## 6. Array계산 - Universal functions
+
+* Universal functions는 하나의 함수를 모든 원소에 자동으로 적용해주는 기능입니다.
+* 이 기능 덕분에 하나의 연산을 모든 원소에 적용하는 작업에 대해 엄청나게 빠른 속도를 제공합니다.
+
+```python
+# [1, 2, 3]이라는 list와 array를 생성합니다.
+L = [1, 2, 3]
+arr1 = np.array(L)
+
+# 모든 원소에 + 1을 하는 연산을 하기 위해선 python list의 경우 다음과 같은 과정이 필요합니다.
+
+for index in range(len(L)):
+    L[index] += 1
+
+# numpy array같은 경우 다음과 같은 과정이 필요합니다. 훨씬 간단할 뿐만 속도도 빠릅니다.
+
+arr1 + 1
+```
+
+## 7. Indexing
+
+* numpy array의 indexing같은 경우 python list와 상당히 비슷하지만 훨씬 강력한 기능을 제공하고 있습니다.
+```python
+arr = ([1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9])
+
+print(arr[1, 2])   # 기존 python list 의 경우 arr[1][2]
+# 7
+
+print(arr[:, 2])   # : 는 전체라는 의미입니다. 즉 3번째 row를 전부 출력합니다.
+# [7, 8, 9]
+```
+
+## 8. Masking
+
+* masking은 조건에 맞는 경우 True 맞지 않는 경우 False를 출력합니다.
+* 위의 indexing과 결합할 경우 원하는 조건에 맞는 원소를 탐색해주는 매우 강력한 기능을 제공합니다.
+
+```python
+data = np.random.randn(7, 4)   # -1 부터 1까지 random한 값을 갖는 7 X 4 array를 생성합니다.
+print(data)
+masked_data = data > 0         # random으로 생성된 data의 원소중 양수인 원소에만 True를 생성합니다.
+print(masked_data)
+
+print(data[masked_data, :])           # 전체 data 원소 중 masked_data가 True인 원소만을 출력합니다. 이런식으로 index부분에 expression을 집어 넣는 것을 fancy indexing이라고 합니다.
+
+
+

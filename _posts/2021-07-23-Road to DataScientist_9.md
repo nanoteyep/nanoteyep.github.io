@@ -213,6 +213,7 @@ arr1 + 1
 ## 7. Indexing
 
 * numpy array의 indexing같은 경우 python list와 상당히 비슷하지만 훨씬 강력한 기능을 제공하고 있습니다.
+
 ```python
 arr = ([1, 2, 3],
         [4, 5, 6],
@@ -236,7 +237,13 @@ print(data)
 masked_data = data > 0         # random으로 생성된 data의 원소중 양수인 원소에만 True를 생성합니다.
 print(masked_data)
 
-print(data[masked_data, :])           # 전체 data 원소 중 masked_data가 True인 원소만을 출력합니다. 이런식으로 index부분에 expression을 집어 넣는 것을 fancy indexing이라고 합니다.
+print(data[masked_data])           # 전체 data 원소 중 masked_data가 True인 원소만을 출력합니다. 이런식으로 index부분에 expression을 집어 넣는 것을 fancy indexing이라고 합니다.
 
+print(data[:, 0] < 0)           # 첫번째 row 에서 0보다 작은 원소는 True를, 0보다 큰 원소는 False를 출력합니다.
+print(data[data[:, 0] < 0, 1])  # 첫번째 row 에서 True가 나온 column을 기억해 두번째 row 에서의 그 column값을 출력합니다.
+```
+---
+# 마치며
 
+numpy의 기능은 여러가지 method를 포함하여 여러가지가 있지만 이번 포스팅에서는 대략적인 사용법만 알아보았습니다. numpy는 데이터 분석에서 매우 중요한 라이브러리 입니다. 다음 포스팅에서는 numpy처럼 데이터 분석에 매우 중요한 두번째 라이브러리, pandas에 대해 알아보려고 합니다.
 

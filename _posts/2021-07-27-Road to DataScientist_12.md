@@ -22,7 +22,7 @@ categories: DataScience python kaggle titanic
 * kaggle competition에 참가하기 위해선 회원가입이 필요합니다.
 * 가입을 완료했다면 `competition`란에서 `titanic`을 찾아갑니다.
 
-![titanic_1](/img/titanic_1.PNG)
+![titanic_1](/img/titanic_1.png)
 
 * 전 이미 `competition`에 참가중이기 때문에 `Submit Predictions`으로 활성화 되있습니다만 처음이시라면 `Join Competition`이 활성화 되어 있을 겁니다.
 * `Join Competition`을 클릭하여 `titanic`에 참가합니다.

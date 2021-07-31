@@ -15,7 +15,7 @@ categories: DataScience ToyProject python
 * 이번 프로젝트는 네이버 금융 페이지에서 기업 별 시세 정보를 가져와 이를 바탕으로 기업의 현재가를 예측하는 프로그램을 작성해 보도록 하겠습니다.
 > https://finance.naver.com/item/sise.nhn?code=005930
 
-![toy1_1](/img/toy1_1.png)
+![toy1_1](/img/toy1_1.PNG)
 
 * 위 페이지는 이번 프로젝트의 표적 페이지 중 `삼성전자`의 페이지 입니다.
 * 위 페이지의 `주요 시세` 테이블의 데이터를 파싱해 이를 바탕으로 `현재가`를 예측하는 것이 이번 프로젝트의 목표입니다.
@@ -265,7 +265,7 @@ linear.score(X_train,Y_train)
 ```python
 pd.DataFrame({"Y_answer" : Y_answer.values, "Y_pred" : Y_pred})
 ```
-![toy1_2](/img/toy1_2.png)
+![toy1_2](/img/toy1_2.PNG)
 
 * 왼쪽이 실제 기업의 `현재가` 이며 오른쪽이 저희가 모델을 통해 학습한 `예측 현재가`입니다.
 * 상당히 비슷한 수치를 지닌 것을 보아 성공적으로 알고리즘이 적용된 것 같습니다!

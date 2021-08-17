@@ -32,7 +32,7 @@ anaconda는 파이썬을 사용함에 있어 가상환경을 구축해주어 버
 
 anaconda는 다음 사이트에서 다운로드 받을 수 있습니다. <https://www.anaconda.com/products/individual#Downloads>
 
-![anaconda_1](/img/anaconda_1.png)
+![anaconda_1](/img/anaconda_1.PNG)
 
 자신에게 맞는 버전을 설치하면 되나 저는 윈도우 64-bit환경에서 작업하기 때문에 윈도우 인스톨러를 다운 받습니다.
 

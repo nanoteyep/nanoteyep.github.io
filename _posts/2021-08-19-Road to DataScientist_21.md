@@ -71,7 +71,7 @@ categories: DataScience python ML
 
 ![linear1_9](/img/linear1_9.png)
 
-> Intercept는 상수항, 즉 B0를 의미합니다.
+> Intercept는 비교변수, 여기서는 매출입니다.
 
 > radio와 newspaper모두 회귀계수(B1), 표준오차(s.e(B1)), t 분포가 계산되며 t분포에 따른 p-value가 0.0001이하로 무척 작습니다.
 

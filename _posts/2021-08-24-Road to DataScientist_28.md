@@ -23,7 +23,7 @@ categories: DataScience python ML
 > 이러한 가정하에 ***Discriminant function***을 생성하여 분류(classification)하는 모델입니다.
 
 
-* **Discriminant function
+* **Discriminant function**
 
 ![lda_3](/img/lda_3.png)
 

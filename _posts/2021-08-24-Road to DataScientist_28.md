@@ -20,21 +20,18 @@ categories: DataScience python ML
 
 > 두번째, **각 집단의 공분산은 서로 비슷한 형태의 구조를 가진다.**
 
-> 이러한 가정하에 ***Decision boundary***를 생성하여 분류(classification)하는 모델입니다.
+> 이러한 가정하에 ***Discriminant function***을 생성하여 분류(classification)하는 모델입니다.
 
-* **Decision boundary**
 
-![lda_2](/img/lda_2.png)
-
-> decision boundary는 평균의 차를 최대화 하는 방향으로 설정 해야 확실하게 두 그룹을 구분 할 수 있습니다.
-
-> 그렇지만 첫번째 그림처럼 무작정 평균의 차를 최대화 시킨다면 두 그룹의 분산이 너무 크기 때문에 제대로 된 분류를 할 수 없을 가능성이 큽니다.
-
-> 그렇기 때문에 LDA의 decision boundary는 오른쪽 그림과 같이 분산대비 평균의 차이가 극대화 하는 boundary를 찾아야 합니다.
+* **Discriminant function
 
 ![lda_3](/img/lda_3.png)
 
-> LDH 에서 decision boundary는 위와 같은 식을 가지고 있습니다.
+> LDH는 Discriminant function이라는 위와 같은 식을 가지고 있습니다.
+
+> Discriminant function은 데이터가 특정 그룹, 위 그림에서는 k 그룹에 존재할 확률입니다.
+
+> 즉 LDH는 이 discriminant function이 최대가 되는 그룹을 찾아 분류(Clssify)하는 모델입니다.
 
 > 이 식을 이해하기 위해서는 아래 설명할 두가지 수학적 개념을 이해하여야 합니다.
 
@@ -97,9 +94,24 @@ categories: DataScience python ML
 
 > 특정 벡터를 특정 축에 수직선을 내려 그 크기와 방향을 나타내는 것이며 만약 u가 크기가 1인 방향벡터라면 projection의 값은 두 벡터의 내적과 같습니다.
 
+
+* **Decision boundary**
+
+![lda_2](/img/lda_2.png)
+
+> decision boundary는 두 그룹을 나누는 기준 벡터 입니다.
+
+> decision boundary를 정하기 위해서는 평균의 차를 최대화 하는 방향으로 설정 해야 확실하게 두 그룹을 구분 할 수 있습니다.
+
+> 그렇지만 첫번째 그림처럼 무작정 평균의 차를 최대화 시킨다면 두 그룹의 분산이 너무 크기 때문에 제대로 된 분류를 할 수 없을 가능성이 큽니다.
+
+> 그렇기 때문에 LDA의 decision boundary는 오른쪽 그림과 같이 분산대비 평균의 차이가 극대화 하는 boundary를 찾아야 합니다.
+
+* **Projection을 이용하여 Decision boundary찾기**
+
 ![lda_13](/img/lda_13.png)
 
-> LDA의 목표는 평균의 차를 최대화 하면서 분산을 최소화 하는 것 입니다.
+> LDA의 decision boundary는 평균의 차를 최대화 하면서 분산을 최소화 하는 지점 입니다.
 
 ![lda_14](/img/lda_14.png)
 

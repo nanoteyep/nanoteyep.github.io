@@ -4,7 +4,7 @@ title:  "Coding Test - 2. 이름 추천"
 date:   2021-08-09
 categories: python CodingTest
 ---
-# 키패드 누르기
+# 신규 이름 추천
 ---
 
 ## 개요

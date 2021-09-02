@@ -4,7 +4,7 @@ title:  "Coding Test - 3. 메뉴 리뉴얼"
 date:   2021-09-02
 categories: python CodingTest
 ---
-# 신규 이름 추천
+# 메뉴 리뉴얼
 ---
 
 ## 개요

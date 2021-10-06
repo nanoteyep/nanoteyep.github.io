@@ -109,6 +109,14 @@ categories: DataScience python DL
 
 > AlexNet의 경우 무척 오래된 구조이기 때문에 당시 메모리 사이즈가 부족하여 데이터를 두개로 쪼개 각기 다른 GPU에서 연산하였기 때문에 구조도에서 반으로 쪼개진 것 처럼 보입니다. 하지만 동일한 연산을 두개의 GPU에서 행하기 위해 분산시켜준 것이기 때문에 기본적으로 같은 구조 입니다.
 
+![cnn_10](/img/cnn_10.png)
+
+> 여기서 처음나온 normalization이란 위와 같이 분포도를 재 조정해주는 역할을 합니다.
+
+> normalization을 하지 않고 activation function, 주로 ReLU에 넣게 된다면 음으로 치우쳐진 데이터는 대부분 소실될 것이고 양으로 치우쳐진 데이터는 그대로 출력되어 아무 의미를 가지지 않을 것 입니다.
+
+> 그렇기 때문에 activatio function이전에 normalization term을 가져 데이터를 보정해주는 것 입니다.
+
 ## 3.3 ResNet
 
 ![cnn_9](/img/cnn_9.png)

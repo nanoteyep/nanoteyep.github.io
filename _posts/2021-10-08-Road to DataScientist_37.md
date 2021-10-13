@@ -82,7 +82,7 @@ categories: DataScience python DL
 
 > 크게 위의 두가지로 분류됩니다.
 
-> **Vector Space Model**은 **Tokenization**된 최소단위인 **Token**을 기준으로 전체 **Documents**의 **Token**을 모아둔 **사전**을 전체 차원으로 가지고 특정 Token이 존재하면 1 존재하지 않는다면 0으로 변환한 **Vector**를 반환합니다.
+> **Vector Space Model**은 **Tokenization**된 최소단위인 **Token**을 기준으로 전체 **Documents**의 **Token**을 모아둔 **사전**을 전체 차원으로 가지고 특정 Token이 존재하면 1 존재하지 않는다면 0으로 변환한 **one-hot encoded Vector**를 반환합니다.
 
 > 하지만 이 특정 단어의 중요도와 같은 정보를 포함하지 않습니다.
 
@@ -96,11 +96,9 @@ categories: DataScience python DL
 
 > **Word embedding**, **Sentence embedding**과 같은 방식이 존재하며 *Word to Vector*, *Glove*, *BERT* 등과 같은 모델이 존재합니다.
 
-> **Word embedding**의 원리를 간단히 설명한다면 *같은 위치에 존재하는 단어는 유사한 의미를 가진다* 라는 방식을 구현 한 것 입니다.
+> **Word embedding**의 원리를 간단히 설명한다면 *같은 위치에 존재하는 단어는 유사한 의미를 가진다* 라는 방식을 이용하여 word vector를 축소하는 방법입니다.
 
-> 같은 위치에 존재한다는 것은 양 옆에 오는 단어들의 유사성을 의미하며 이는 window size라는 hyper-parameter로 크기를 설정 할 수 있습니다.
-
-> window내에 있는 단어들은 1이 되도록, -------------------NNLM 수정 필요
+> 간단하게 Auto Encoder와 같은 원리를 가지고 있습니다.
 
 
 ## 2.4 Downstream task

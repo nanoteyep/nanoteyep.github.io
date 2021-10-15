@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 7.Python 기초 라이브러리_2_pandas"
 date:   2021-07-24 
-categories: DataScience python pandas
+categories: DataScience 
+tags: DataScience python pandas
 ---
 # Python 기초 라이브러리 2
 ---

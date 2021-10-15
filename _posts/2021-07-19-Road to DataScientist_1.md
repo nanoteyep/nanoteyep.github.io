@@ -2,8 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 1.데이터 분석이란"
 date:   2021-07-19 
-categories: DataScience python 
-tag: [blog, test]
+categories: DataScience
+tags: DataScience
 ---
 # 데이터 분석
 ---

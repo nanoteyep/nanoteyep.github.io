@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 27. 의사결정나무"
 date:   2021-08-26
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience
+tags: DataScience ML
 ---
 # Decision Tree
 

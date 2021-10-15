@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 11. SQL 연습 - 1.기후데이터"
 date:   2021-08-09
-categories: DataScience python Database Oracle
+categories: DataScience 
+tags: DataScience Database Oracle
 ---
 # SQL 연습 - 1.기후데이터
 ---

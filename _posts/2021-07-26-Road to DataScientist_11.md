@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 8.실습"
 date:   2021-07-26 
-categories: DataScience python
+categories: DataScience 
+tags: DataScience python
 ---
 # 실습
 ---

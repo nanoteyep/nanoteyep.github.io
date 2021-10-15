@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 34. Deep Learning - National Language Processin
 date:   2021-10-09
 use_math: true
 comments: true
-categories: DataScience python DL
+categories: DataScience 
+tags: DataScience DL
 ---
 # Deep Learning - NLP__Embedding
 

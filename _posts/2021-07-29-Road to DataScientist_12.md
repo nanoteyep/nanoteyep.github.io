@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 9.Web Crawling"
 date:   2021-07-29
-categories: DataScience python WebCrawling
+categories: DataScience 
+tags: DataScience python WebCrawling
 ---
 # Web Crawling
 ---

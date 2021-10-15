@@ -2,7 +2,8 @@
 layout: post
 title:  "Coding Test - 6. 오픈채팅방"
 date:   2021-09-07
-categories: python CodingTest
+categories: CodingTest
+tags: python CodingTest
 ---
 # 오픈채팅방
 ---

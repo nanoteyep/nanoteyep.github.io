@@ -4,17 +4,18 @@ title:  "Road to Datascientist - 25. LDA"
 date:   2021-08-24
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # Linear Discriminant Analysis
 
 ---
 
-# 1. LDH란
+# 1. LDA란
 
 ![ldh_1](/img/lda_1.png)
 
-> 먼저 LDH는 두가지 가정이 존재합니다.
+> 먼저 LDA는 두가지 가정이 존재합니다.
 
 > 첫번째, **각 집단은 정규분포 형태의 확률분포를 가진다.**
 

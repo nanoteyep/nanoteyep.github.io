@@ -2,7 +2,8 @@
 layout: post
 title:  "Toy Project - 2. 버거지수 계산"
 date:   2021-08-04
-categories: DataScience ToyProject python
+categories: Project 
+tags: DataScience ToyProject WebCrawling python
 ---
 # 버거지수 계산
 ---

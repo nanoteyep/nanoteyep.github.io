@@ -2,7 +2,8 @@
 layout: post
 title:  "Coding Test - 1. 키패드"
 date:   2021-08-09
-categories: python CodingTest
+categories: CodingTest
+tags: CodingTest python
 ---
 # 키패드 누르기
 ---

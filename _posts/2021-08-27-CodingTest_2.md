@@ -2,7 +2,8 @@
 layout: post
 title:  "Coding Test - 2. 이름 추천"
 date:   2021-08-27
-categories: python CodingTest
+categories: CodingTest
+tags: python CodingTest
 ---
 # 신규 이름 추천
 ---

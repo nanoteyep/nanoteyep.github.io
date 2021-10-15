@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 14. SQL 연습 - 4.상권정보 데이터"
 date:   2021-08-12
-categories: DataScience python Database Oracle
+categories: DataScience 
+tags: DataScience Database Oracle
 ---
 # SQL 연습 - 4. 상권정보 데이터
 ---

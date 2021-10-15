@@ -2,7 +2,9 @@
 layout: post
 title:  "Road to Datascientist - 17. 수학적 개념 2. 가능도함수와 행렬의 미분"
 date:   2021-08-19
-categories: DataScience python ML
+categories: DataScience 
+tag: DataScience 
+tags: DataScience ML
 ---
 # 수학적 개념 2
 ---

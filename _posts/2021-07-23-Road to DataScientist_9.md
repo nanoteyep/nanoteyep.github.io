@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 6.Python 기초 라이브러리_1_numpy"
 date:   2021-07-23 
-categories: DataScience python numpy
+categories: DataScience
+tags: DataScience python numpy
 ---
 # Python 기초 라이브러리 1
 ---

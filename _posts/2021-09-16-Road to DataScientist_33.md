@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 29. Deep Learning - Neural Network"
 date:   2021-09-16
 use_math: true
 comments: true
-categories: DataScience python DL
+categories: DataScience
+tags: DataScience DL
 ---
 # Deep Learning__Neural Network__
 

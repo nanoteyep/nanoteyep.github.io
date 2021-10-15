@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 26. SVM"
 date:   2021-08-25
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # Support Vector Machine
 

@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 30. Deep Learning - Convolutional Neural Networ
 date:   2021-10-05
 use_math: true
 comments: true
-categories: DataScience python DL
+categories: DataScience
+tags: DataScience DL
 ---
 # Deep Learning - CNN
 

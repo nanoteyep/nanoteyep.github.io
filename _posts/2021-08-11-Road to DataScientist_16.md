@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 13. SQL 연습 - 3.대중교통 데이터"
 date:   2021-08-11
-categories: DataScience python Database Oracle
+categories: DataScience
+tags: DataScience Database Oracle
 ---
 # SQL 연습 - 3.대중교통 데이터
 ---

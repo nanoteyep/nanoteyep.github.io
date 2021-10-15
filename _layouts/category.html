@@ -22,8 +22,8 @@ layout: default
       </div>
       {% endif %}
     </li>
-
-    {%- for post in site.posts -%}
+    {% assign category = page.category | default: page.title %}
+    {% for post in site.categories[category] %}
       <li>
         {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
         <a class="post-link" href="{{ post.url | relative_url }}">

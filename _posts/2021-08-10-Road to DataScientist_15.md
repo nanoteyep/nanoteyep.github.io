@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 12. SQL 연습 - 2.인구 데이터"
 date:   2021-08-10
-categories: DataScience python Database Oracle
+categories: DataScience 
+tags: DataScience Database Oracle
 ---
 # SQL 연습 - 2.인구데이터
 ---

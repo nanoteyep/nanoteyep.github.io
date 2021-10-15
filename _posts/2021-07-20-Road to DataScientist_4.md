@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 3.Python 기초문법_1_datatype 예제"
 date:   2021-07-20 
-categories: DataScience python 
+categories: DataScience 
+tags: DataScience python 
 ---
 # Python 기초문법_1 예제
 ---

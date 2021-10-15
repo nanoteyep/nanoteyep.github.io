@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 28. Ensemble Learning"
 date:   2021-09-06
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience
+tags: DataScience ML
 ---
 # Ensemble Learning
 

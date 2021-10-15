@@ -1,6 +1,7 @@
 title: nanoteyep's blog
 author: nanoteyep
 email: tolight20@gmail.com
+url: "https://nanoteyep.github.io"
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -20,8 +21,16 @@ plainwhite:
   dark_mode: true # set to true to add dark mode toggle
   portfolio_image: "assets/profile.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  analytics_id: "tolight20@gmail.com"
+  navigation:
+    - title: Road to Datascientist
+      url: "/datascience"
+    - title: Project
+      url: "/project"
+    - title: CodingTest
+      url: "/codingtest"
   condensed_mobile:
-    #- home
+    - home
     - page
     - post
   # generate social links in footer
@@ -62,8 +71,66 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
 plugins:
   - jekyll-seo-tag
   - webrick
 #  - jekyll-feed
+
+# ----------------------------------------------------------------------------------------------------------------------- custom setting
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # 첫 페이지에보여줄 최근 게시물 수를 지정
+paginate_path: /page:num/
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Comments
+comments:
+  provider               : # 블로그 댓글 기능 false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : # 블로그 댓글 기능 https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+    
+
+# Analytics
+analytics:
+  provider               : false # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+    
+    
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # 블로그 댓글 기능 true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false

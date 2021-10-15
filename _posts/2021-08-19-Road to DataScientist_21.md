@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 18. 선형회귀 1. 단순,다중 선형회귀 분석 "
 date:   2021-08-19
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # 선형회귀 1
 ---

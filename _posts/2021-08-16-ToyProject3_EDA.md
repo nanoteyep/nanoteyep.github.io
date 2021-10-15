@@ -2,7 +2,8 @@
 layout: post
 title:  "Toy Project - 3. 대출등급 EDA"
 date:   2021-08-12
-categories: DataScience ToyProject python 
+categories: Project
+tags: DataScience python EDA
 ---
 # 대출등급 EDA
 ---

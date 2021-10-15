@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 32. Deep Learning - Generative models"
 date:   2021-10-06
 use_math: true
 comments: true
-categories: DataScience python DL
+categories: DataScience
+tags: DataScience DL
 ---
 # Deep Learning - Generative models
 

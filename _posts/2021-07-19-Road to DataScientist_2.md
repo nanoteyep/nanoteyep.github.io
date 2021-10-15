@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 2.환경설정"
 date:   2021-07-19 
-categories: DataScience python 
+categories: DataScience
+tags: DataScience
 ---
 # 환경설정
 ---

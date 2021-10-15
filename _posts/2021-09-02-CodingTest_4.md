@@ -2,7 +2,8 @@
 layout: post
 title:  "Coding Test - 4. 순위 검색"
 date:   2021-09-02
-categories: python CodingTest
+categories: CodingTest
+tags: python CodingTest
 ---
 # 순위 검색
 ---

@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 15. Machine Learning"
 date:   2021-08-17
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # MachineLearning의 개념과 종류
 ---

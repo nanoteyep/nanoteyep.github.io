@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Toy Project - 1. 주가 예측 프로그램"
+title:  "Toy Project - 1. 현재가 예측 프로그램"
 date:   2021-07-31
-categories: DataScience ToyProject python
+categories: Project
+tags: DataScience ToyProject python
 ---
 # Prediction Of Stock Current Value
 ---

@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to Datascientist - 10. Database"
 date:   2021-08-04
-categories: DataScience python Database
+categories: DataScience 
+tags: DataScience Database
 ---
 # Database
 ---

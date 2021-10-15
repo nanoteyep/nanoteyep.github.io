@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 24. KNN"
 date:   2021-08-24
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # k-Nearest Neighborhood
 

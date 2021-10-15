@@ -2,7 +2,9 @@
 layout: post
 title:  "Road to Datascientist - 16. 수학적 개념 1. 통계"
 date:   2021-08-19
-categories: DataScience python ML
+categories: DataScience
+tag: DataScience 
+tags: DataScience ML
 ---
 # 수학적 개념 1
 ---

@@ -2,7 +2,8 @@
 layout: post
 title:  "Coding Test - 5. 문자열 압축"
 date:   2021-09-07
-categories: python CodingTest
+categories: CodingTest
+tags: python CodingTest
 ---
 # 문자열 압축
 ---

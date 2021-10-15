@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 22. PCA - 차원 축소"
 date:   2021-08-23
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # PCA
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 4.Python 기초문법_2_Control statement"
 date:   2021-07-21 
-categories: DataScience python 
+categories: DataScience
+tags: DataScienc python 
 ---
 # Python 기초문법_2
 ---

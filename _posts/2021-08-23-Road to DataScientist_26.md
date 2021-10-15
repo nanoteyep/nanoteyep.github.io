@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 23. Naive bayes classifier"
 date:   2021-08-23
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # Naive bayes classifier
 

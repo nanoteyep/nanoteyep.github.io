@@ -2,7 +2,8 @@
 layout: post
 title:  "Road to DataScientist - 5.Python 기초문법_3_Function"
 date:   2021-07-22 
-categories: DataScience python 
+categories: DataScience 
+tags: DataScience python 
 ---
 # Python 기초문법_3
 ---

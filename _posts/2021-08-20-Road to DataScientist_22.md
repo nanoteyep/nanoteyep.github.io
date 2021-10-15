@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 19. 선형회귀 2. 회귀모델의 성능"
 date:   2021-08-19
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience
+tags: DataScience ML
 ---
 # 선형회귀 2
 ---

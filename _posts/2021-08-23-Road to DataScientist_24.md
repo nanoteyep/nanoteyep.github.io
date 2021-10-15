@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 21. 회귀계수 축소법"
 date:   2021-08-23
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # 회귀계수 축소법
 

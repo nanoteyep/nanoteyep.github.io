@@ -4,7 +4,8 @@ title:  "Road to Datascientist - 27. 신경망 모형"
 date:   2021-08-27
 use_math: true
 comments: true
-categories: DataScience python ML
+categories: DataScience 
+tags: DataScience ML
 ---
 # Neural Network
 

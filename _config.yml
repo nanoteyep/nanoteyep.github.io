@@ -24,11 +24,11 @@ plainwhite:
   analytics_id: "tolight20@gmail.com"
   navigation:
     - title: Road to Datascientist
-      url: "/datascience"
+      url: "/DataScience"
     - title: Project
-      url: "/project"
+      url: "/Project"
     - title: CodingTest
-      url: "/codingtest"
+      url: "/CodingTest"
   condensed_mobile:
     - home
     - page

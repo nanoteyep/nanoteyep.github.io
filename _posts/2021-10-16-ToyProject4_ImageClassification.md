@@ -16,6 +16,9 @@ tags: DataScience python ComputerVision
 * 작업 환경은 `Kaggle Notebook`이며 코드는 아래 링크에 공유되어 있습니다.
 > <https://www.kaggle.com/tolight20/animal-classification/notebook>
 
+* 모델코드는 아래 링크를 참조하였습니다.
+> <https://deep-learning-study.tistory.com/534>
+
 * 동물 이미지 분류를 하기 위해 Dataset을 찻던 도중 kaggle 내에 공유된 Dataset이 있었기에 사용하게 되었습니다.
 
 ---

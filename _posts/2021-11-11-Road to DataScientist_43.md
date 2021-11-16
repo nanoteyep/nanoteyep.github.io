@@ -14,7 +14,7 @@ tags: DataScience DL NLP PLMs HuggingFace
 # 시작하기 앞서
 
 이번 포스팅에서는 **BERT**를 이용해 **Text Classification**, 즉 감정분석 코드를 작성하고 리뷰하는 형식으로 설명하겠습니다.  
-코드는 kh-kim님의 simple-ntc를 활용하겠습니다.
+***코드는 kh-kim님의 simple-ntc를 활용하겠습니다.***
 
 > <https://github.com/kh-kim/simple-ntc>
 
@@ -138,3 +138,135 @@ config는 아래 함수에서 정의되어 있습니다.
 library import 부분부터 차근차근 뜯어 보도록 하겠습니다.
 
 ## 4.1 Library
+
+```python
+import argparse
+import random
+```
+argument를 입력받고 random 하게 섞어주는 기능을 사용하게 해주는 모듈입니다.
+
+```python
+from sklearn.metrics import accuracy_score
+```
+accuracy_score를 계산하기 위한 모듈입니다. Classification문제를 올바르게 예측한 갯수를 전체 갯수로 나누어준 값을 return합니다.
+
+```python
+from transformers import BertTokenizerFast
+from transformers import BertForSequenceClassification, AlbertForSequenceClassification
+from transformers import Trainer
+from transformers import TrainingArguments
+```
+**HuggingFace**의 transformers 모듈입니다. **BertTokenizerFast**는 pre-trained된 tokenizer를 불러오는데 사용되며 **BertForSequenceClassification, AlbertForSequenceClassification**는 pre-trained된 BERT 혹은 ALBERT모델을 불러오는데 사용됩니다.  
+ALBERT는 BERT의 light 버전입니다.  
+**Trainer**는 train을 시키기 위한 모듈이며 **TrainingArguments**는 Trainer에 arg인자로 들어가며 학습의 세부 설정을 담당합니다.
+
+```python
+from simple_ntc.bert_dataset import TextClassificationCollator
+from simple_ntc.bert_dataset import TextClassificationDataset
+from simple_ntc.utils import read_text
+```
+위 세가지 모듈은 repo안에 포함되어 있으며 위에서 설명 하였으니 넘어가겠습니다. utils의 read_text는 말그대로 원본 데이터, 즉 text를 읽어오는 함수입니다.
+
+## 4.2 define_argparser()
+
+CUI환경에서 실행시킬때 실행과 동시에 인자를 입력받는 함수입니다. config안에 argument가 전부 저장되며 config.pretrained_model_name과 같이 사용됩니다.  
+model_fn은 학습을 완료하고 모델을 저장하는 경로를 입력해주어야 하며 train_fn은 학습을 위한 데이터, tsv파일 경로를 입력해주면 됩니다.
+
+
+## 4.3 get_dataset()
+
+학습을 위한 데이터를 저장해둔 **tsv파일 경로를 입력**받아 **train_dataset, valid_dataset, index_to_label을 출력** 하는 함수입니다.  
+
+내부 과정으로는 먼저 index를 label로 반환하는 dictionary와 label을 index로 반환하는 dictionary를 생성합니다.  
+후에 train, val set을 나누기 전에 랜덤하게 셔플한 후 valid ratio만큼 분리합니다. valid ratio는 입력값으로 default가 0.2 입니다.
+
+## 4.4 main()
+
+main함수 입니다. 특별한 return값은 없지만 함수가 진행되는 동안 학습을 진행하고 학습이 완료되면 완료된 모델을 저장합니다.
+
+```python
+# Get pretrained tokenizer.
+tokenizer = BertTokenizerFast.from_pretrained(config.pretrained_model_name)
+# Get datasets and index to label map.
+train_dataset, valid_dataset, index_to_label = get_datasets(
+    config.train_fn,
+    valid_ratio=config.valid_ratio
+    )
+```
+tokenizer와 dataset을 생성하는 부분입니다. tokenizer는 HuggingFace의 기능을 사용해 한줄만에 구현하였으며 dataset을 만드는 부분은 위에서 만든 get_datasets함수를 사용하였습니다.
+
+```python
+total_batch_size = config.batch_size_per_device * torch.cuda.device_count()
+n_total_iterations = int(len(train_dataset) / total_batch_size * config.n_epochs)
+n_warmup_steps = int(n_total_iterations * config.warmup_ratio)
+print(
+    '#total_iters =', n_total_iterations,
+    '#warmup_iters =', n_warmup_steps,
+)
+```
+total iterations와 warmup iteration을 설정하는 부분입니다. 특별한 입력이 없다면 epochs는 5, warmup_ratio는 0.2로 설정되어 있습니다.
+
+```python
+# Get pretrained model with specified softmax layer.
+model_loader = AlbertForSequenceClassification if config.use_albert else BertForSequenceClassification
+model = model_loader.from_pretrained(
+    config.pretrained_model_name,
+    num_labels=len(index_to_label)
+)
+```
+
+model을 설정하는 부분입니다. 마찬가지로 HuggingFace의 기능을 사용하여 모델 아이디를 넣고 간단하게 구현하였습니다.
+
+```python
+training_args = TrainingArguments(
+    output_dir='./.checkpoints',
+    num_train_epochs=config.n_epochs,
+    per_device_train_batch_size=config.batch_size_per_device,
+    per_device_eval_batch_size=config.batch_size_per_device,
+    warmup_steps=n_warmup_steps,
+    weight_decay=0.01,
+    fp16=True,
+    evaluation_strategy='epoch',
+    logging_steps=n_total_iterations // 100,
+    save_steps=n_total_iterations // config.n_epochs,
+    load_best_model_at_end=True,
+)
+```
+
+HuggingFace의 Trainer를 사용할 예정이기 때문에 마찬가지로 HuggingFace의 TrainingArguments 함수를 이용하여 argument를 작성하는 부분입니다.  
+경로, epochs, device당 batch size, .. 등등 train의 상세 사항을 조정 할 수 있습니다.
+
+```python
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    data_collator=TextClassificationCollator(tokenizer,
+                                   config.max_length,
+                                   with_text=False),
+    train_dataset=train_dataset,
+    eval_dataset=valid_dataset,
+    compute_metrics=compute_metrics,
+)
+
+trainer.train()
+```
+
+Fine tuning을 하는 부분입니다. HuggingFace에서 제공하는 Trainer 클래스를 사용하였으며 지금까지 작성한 함수들을 사용해 인자를 채워주고 .train 메소드를 이용해 fine tuning을 실행합니다.
+
+```python
+torch.save({
+    'rnn': None,
+    'cnn': None,
+    'bert': trainer.model.state_dict(),
+    'config': config,
+    'vocab': None,
+    'classes': index_to_label,
+    'tokenizer': tokenizer,
+}, config.model_fn)
+```
+마지막으로 모델을 저장해줍니다. rnn, cnn은 repo내의 다른 함수들과 호화성 때문에 작성한 것이며 bert라는 key안에 모델이 저장될 것 입니다.
+
+---
+
+# 마치며
+지금까지 kh_kim님의 simple-ntc코드를 보며 HuggingFace기능을 이용한 Text Classification 학습을 알아보았습니다. PLMs를 이용하였기 때문에 tokenizor와 모델의 초기 상태를 정해 줄 수 있었으며 HuggingFace를 사용하였기 때문에 사전학습된 정보를 가져오고 학습까지 통일된 플랫폼으로 손쉽게 작성할 수 있었습니다. 이번 포스팅에서 설명하지 않았지만 사용된다고 굵게 표시된 파일들은 HuggingFace를 사용하지 않고 Pytorch ignite를 이용하여 구현한 학습입니다. HuggingFace를 이용하지 않고 PLMs를 구현하는 것과 비교해 보고 싶다면 확인해 보시길 바랍니다.

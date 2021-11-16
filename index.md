@@ -22,10 +22,10 @@ Data can covers all problems. I am a Datascietist by using data for problem solv
 ## Education
 **2021.07**   K-digital Training AI
 
-## Tool
+## Tools
 
 `Git` &nbsp;&nbsp; `Github` &nbsp;&nbsp; `Collab` &nbsp;&nbsp; `JupyterNotebook` &nbsp;&nbsp; `PyCharm` &nbsp;&nbsp; `kaggleNotebook`
 
-## Skill
+## Skills
 
 `python3.7` &nbsp;&nbsp; `PyTorch` &nbsp;&nbsp; `MachineLearning` &nbsp;&nbsp; `DeepLearning` &nbsp;&nbsp; `NLP` &nbsp;&nbsp; `EDA` &nbsp;&nbsp; `WebCrawling`

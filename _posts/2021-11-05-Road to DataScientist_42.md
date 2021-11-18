@@ -89,9 +89,9 @@ CLS토큰으로 시작하며 학습이 완료 된 후 이 위치에 연속하는
 
 이러한 **BERT**는 가장 대중적인 PLMs이며 **Bi-LM**을 구현함으로서 NLU task의 성능을 대폭 향상시켰습니다.
 
-## 3.2 RoBERT
+## 3.2 RoBERTa
 
-**RoBERT**는 쉽게 말해 **BERT의 강화판**입니다. 원문 또한 Robustly Optimized BERT로 해석하면 제대로 최적화 시킨 BERT라는 의미를 가지고 있습니다.
+**RoBERTa**는 쉽게 말해 **BERT의 강화판**입니다. 원문 또한 Robustly Optimized BERT approch로 해석하면 제대로 최적화 시킨 BERT라는 의미를 가지고 있습니다.
 
 기존 BERT와 다른점은 아래와 같습니다.
 
@@ -109,7 +109,7 @@ BERT가 공개되고 시간이 흘러 여러 실험을 통해 NSP가 불필요 �
 
 * Masking 패턴을 feed-forward할 때마다 새롭게 구성하였습니다.
 
-RoBERT는 BERT이후 많은 PLMs가 제안되었지만 결국에 NLU task에서는 BERT가, 즉 RoBERT가 유용하다는 것을 제대로 입증한 모델입니다.
+RoBERTa는 BERT이후 많은 PLMs가 제안되었지만 결국에 NLU task에서는 BERT가, 즉 RoBERT가 유용하다는 것을 제대로 입증한 모델입니다.
 
 ---
 

@@ -14,7 +14,7 @@ tags: DataScience python EDA
 > <https://www.kaggle.com/wordsforthewise/lending-club>
 
 * 작업 환경은 `Colab`이며 코드는 아래 링크에 공유되어 있습니다.
-> <https://github.com/nanoteyep/Python_practice/tree/master/EDA/LendingCLUB>
+> <https://github.com/nanoteyep/ToyProject/blob/main/EDA/LendingCLUB/LendingClub_EDA.ipynb>
 
 ---
 

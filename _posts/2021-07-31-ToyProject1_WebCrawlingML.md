@@ -11,10 +11,10 @@ tags: DataScience ToyProject python
 ## 1. 개요
 
 * 모든 코드는 깃헙에 공개되어 있습니다.
->https://github.com/nanoteyep/ToyProject/tree/main/ToyProject1
+> <https://github.com/nanoteyep/ToyProject/tree/main/ToyProject1>
 
 * 이번 프로젝트는 네이버 금융 페이지에서 기업 별 시세 정보를 가져와 이를 바탕으로 기업의 현재가를 예측하는 프로그램을 작성해 보도록 하겠습니다.
-> https://finance.naver.com/item/sise.nhn?code=005930
+> <https://finance.naver.com/item/sise.nhn?code=005930>
 
 ![toy1_1](/img/toy1_1.PNG)
 

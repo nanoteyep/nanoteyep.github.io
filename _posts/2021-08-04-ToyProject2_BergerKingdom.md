@@ -18,7 +18,7 @@ tags: DataScience ToyProject WebCrawling python
 
 모든 코드와 데이터는 깃헙에 공개되어 있습니다.
 
-> <https://github.com/nanoteyep/Python_practice/tree/master/BergerKingdom>
+> <https://github.com/nanoteyep/ToyProject/blob/main/BergerKingdom/berger_kingdom.ipynb>
 
 ---
 

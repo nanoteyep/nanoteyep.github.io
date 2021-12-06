@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Kaggle - 1.Titanic"
+title:  "KaggleCompetition - 1.Titanic"
 date:   2021-07-27 
 categories: Project 
-tags: DataScience kaggle
+tags: DataScience kaggle sklearn ML
 ---
-# kaggle competition - 1. Titanic
+# kaggle competition - Titanic
 ---
 
 ## 시작하기에 앞서

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Toy Project - 3. 대출등급 EDA"
+title:  "EDA - 대출등급"
 date:   2021-08-12
 categories: Project
 tags: DataScience python EDA
 ---
-# 대출등급 EDA
+# EDA - LoanGrade data
 ---
 
 ## 시작하기에 앞서

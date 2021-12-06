@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toy Project - 2. 버거지수 계산"
+title:  "Project - 버거지수 계산"
 date:   2021-08-04
 categories: Project 
 tags: DataScience ToyProject WebCrawling python
@@ -10,9 +10,9 @@ tags: DataScience ToyProject WebCrawling python
 
 ## 버거지수란?
 
->밐폭도 @Godtsune_miku
+> 밐폭도 @Godtsune_miku
 
->"한 도시의 발전 수준은 (버거킹의 개수+맥도날드의 개수+KFC의 개수)/롯데리아의 개수를 계산하여 높게 나올수록 더 발전된 도시라고 할 수 있다"
+> "한 도시의 발전 수준은 (버거킹의 개수+맥도날드의 개수+KFC의 개수)/롯데리아의 개수를 계산하여 높게 나올수록 더 발전된 도시라고 할 수 있다"
 
 라는 한 트위터 글에서 가져온 지수입니다. 지금부터 버거킹, 맥도날드, KFC, 롯데리아의 지역별 지점수를 가져와 이를 계산해 보려고 합니다.
 

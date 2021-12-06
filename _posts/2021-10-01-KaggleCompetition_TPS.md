@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Kaggle - 2.Tabular Playground Series(active)"
+title:  "KaggleCompetition - Tabular Playground Series"
 date:   2021-10-01 
 categories: Project 
-tags: DataScience kaggle
+tags: DataScience kaggle sklearn ML
 ---
-# kaggle competition - 2. Tabular Playground Series
+# kaggle competition - Tabular Playground Series
 ---
 
 ## 시작하기에 앞서
@@ -19,8 +19,8 @@ tags: DataScience kaggle
 팀 이름은 **GMO**입니다.
 
 사용된 notebook은 모두 Public으로 공개되어 있습니다.
-> <https://www.kaggle.com/seoltommy/gmo-submission>
-> <https://www.kaggle.com/mocuishled/gmo-eda>
+> <https://www.kaggle.com/seoltommy/gmo-submission>  
+> <https://www.kaggle.com/mocuishled/gmo-eda>  
 > <https://www.kaggle.com/tolight20/tps-gmo-tolight20>
 
 ---

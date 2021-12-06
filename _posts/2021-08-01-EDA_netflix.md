@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "EDA - 1. nefilx"
+title:  "EDA - nefilx"
 date:   2021-07-31
 categories: Project
 tags: DataScience EDA python
 ---
-# EDA - 1. netflix data
+# EDA netflix data
 ---
 
 ## 1. 개요

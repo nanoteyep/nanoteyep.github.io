@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Toy Project - 4. Image Classification_ResNet"
+title:  "Project - Image Classification_ResNet"
 date:   2021-10-16
 categories: Project
-tags: DataScience python ComputerVision
+tags: DataScience PyTorch ComputerVision CNN DL
 ---
-# Image Classification
+# Image Classification_ResNET
 ---
 
 ## 시작하기에 앞서

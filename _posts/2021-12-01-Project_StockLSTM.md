@@ -3,7 +3,7 @@ layout: post
 title:  "StockLSTM - LSTM을 활용한 주가 예측"
 date:   2021-12-01
 categories: Project
-tags: DataScience python RNN
+tags: DataScience PyTorch RNN DL
 ---
 # Prediction of Stock Price by using LSTM
 ---

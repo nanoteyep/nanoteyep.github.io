@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Toy Project - 1. 현재가 예측 프로그램"
+title:  "Project - LinearRegression 현재가 예측"
 date:   2021-07-31
 categories: Project
-tags: DataScience ToyProject python
+tags: DataScience sklearn WebCrawling ML
 ---
 # Prediction Of Stock Current Value
 ---

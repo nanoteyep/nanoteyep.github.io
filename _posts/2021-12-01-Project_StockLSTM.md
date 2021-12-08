@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "StockLSTM - LSTM을 활용한 주가 예측"
+title:  "Project - LSTM을 활용한 주가 예측"
 date:   2021-12-01
 categories: Project
 tags: DataScience PyTorch RNN DL

@@ -27,7 +27,7 @@ tags: DataScience kaggle sklearn ML
 
 ## 1. TPS 알아보기
 
-**TPS는 Insurance Policy, 보험 정책에 따른 Claim을 할 지, 하지 않을 지 결정하는 **binary classification** 문제 입니다.**
+TPS는 Insurance Policy, 보험 정책에 따른 Claim을 할 지, 하지 않을 지 결정하는 **binary classification** 문제 입니다.
 
 ## 1.1 Submission
 

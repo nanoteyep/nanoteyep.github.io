@@ -12,7 +12,8 @@ tolight20@gmail.com
 <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
 https://github.com/nanoteyep
 </a><br><br>
-Data can covers all problems. I am a Datascietist by using data for problem solving. 
+Data can covers all problems.  
+I am a Datascietist by using data for problem solving. 
 
 <br><br>
 

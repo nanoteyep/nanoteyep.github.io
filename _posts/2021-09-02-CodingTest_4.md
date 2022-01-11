@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 4. 순위 검색"
+title:  "Coding Test - 순위 검색"
 date:   2021-09-02
 categories: CodingTest
 tags: python CodingTest

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 8. 완주하지 못한 선수"
+title:  "Coding Test - 완주하지 못한 선수"
 date:   2022-01-10
 categories: CodingTest
 tags: python CodingTest

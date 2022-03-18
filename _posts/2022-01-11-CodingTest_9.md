@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 전화번호 목록"
+title:  "Programmers - 전화번호 목록"
 date:   2022-01-11
 categories: CodingTest
 tags: python CodingTest

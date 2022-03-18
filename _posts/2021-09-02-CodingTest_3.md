@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 메뉴 리뉴얼"
+title:  "Programmers - 메뉴 리뉴얼"
 date:   2021-09-02
 categories: CodingTest
 tags: python CodingTest

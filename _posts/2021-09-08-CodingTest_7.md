@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 괄호 변환"
+title:  "Programmers - 괄호 변환"
 date:   2021-09-08
 categories: CodingTest
 tags: python CodingTest

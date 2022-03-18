@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 키패드"
+title:  "Programmers - 키패드"
 date:   2021-08-09
 categories: CodingTest
 tags: CodingTest python

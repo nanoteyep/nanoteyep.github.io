@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Test - 문자열 압축"
+title:  "Programmers - 문자열 압축"
 date:   2021-09-07
 categories: CodingTest
 tags: python CodingTest

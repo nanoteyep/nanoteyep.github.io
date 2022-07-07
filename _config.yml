@@ -31,6 +31,8 @@ plainwhite:
       url: "/CodingTest"
     - title: Paper Review
       url: "/PaperReview"
+    - title: Machine Learning with Graphs
+      url: "/GNN"
   condensed_mobile:
     - home
     - page
